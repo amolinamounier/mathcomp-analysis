@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Module mathcomp.classical.boolp</title>
-<meta name="description" content="Documentation of Coq module Mathcomp Analysis 00a80bd 2026.09.22-21:21" />
+<meta name="description" content="Documentation of Coq module Mathcomp Analysis 00a80bd 2026.09.23-21:46" />
 <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
 <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/markdown-it-deflist/dist/markdown-it-deflist.min.js"></script>
@@ -1661,7 +1661,7 @@ Qed.</div></details>
 <span class="id"> exact:</span><span class="id"> </span><span class="id"><a href="mathcomp.classical.unstable.html#Order.default_display">Order</a></span>.<span class="id"><a href="mathcomp.classical.unstable.html#Order.default_display">default_display</a></span>. Qed.</div></details>
 <br/>
 <span class="vernacular">Definition</span><span class="id"> </span><span id="FunOrder.lef" class="id"><div name="FunOrder.lef" class=" tooltip">lef<span class='tooltip-area'><p>FunOrder.lef :
-forall {aT : Type} {d : Order.disp_t} {T : porderType d},
+forall {aT : Type} {d : disp_t} {T : porderType d},
 (aT -> T) -> (aT -> T) -> bool
 
 FunOrder.lef is not universe polymorphic
@@ -1673,7 +1673,7 @@ Declared in library mathcomp.classical.boolp, line 909, characters 11-14
 <span class="vernacular">Local</span><span class="vernacular"> Notation</span> <span id="f19451cbaa2069d404dd9bdd9c3b0464" class="id"><div name="f19451cbaa2069d404dd9bdd9c3b0464" class=" tooltip">&quot;f &lt;= g&quot;<span class='tooltip-area'><hr/><a href='https://github.com/math-comp/analysis/tree/00a80bdd280330eb64f7eaf6a4ead748c323b46a/classical/boolp.v#L910' target='_blank'>Source code</a></span></div></span><span class="id"> :=</span> (<span class="id"><a href="mathcomp.classical.boolp.html#FunOrder.lef">lef</a></span><span class="id"> f</span><span class="id"> g</span>).<br/>
 <br/>
 <span class="vernacular">Definition</span><span class="id"> </span><span id="FunOrder.ltf" class="id"><div name="FunOrder.ltf" class=" tooltip">ltf<span class='tooltip-area'><p>FunOrder.ltf :
-forall {aT : Type} {d : Order.disp_t} {T : porderType d},
+forall {aT : Type} {d : disp_t} {T : porderType d},
 (aT -> T) -> (aT -> T) -> bool
 
 FunOrder.ltf is not universe polymorphic
@@ -1731,7 +1731,7 @@ Qed.</div></details>
 <span class="vernacular">Implicit</span><span class="id"> Types</span><span class="id"> f</span><span class="id"> g</span><span class="id"> h</span><span class="id"> :</span><span class="id"> </span><span class="id"><a href="mathcomp.classical.boolp.html#FunOrder.FunLattice.aT">aT</a></span><span class="id"><a href="https://rocq-prover.org/corelib/Corelib.Init.Logic.html#::type_scope:x_'-&gt;'_x"> -&gt;</a></span><span class="id"><a href="https://rocq-prover.org/corelib/Corelib.Init.Logic.html#::type_scope:x_'-&gt;'_x"> </a></span><span class="id"><a href="mathcomp.classical.boolp.html#FunOrder.FunLattice.T">T</a></span>.<br/>
 <br/>
 <span class="vernacular">Definition</span><span class="id"> </span><span id="FunOrder.meetf" class="id"><div name="FunOrder.meetf" class=" tooltip">meetf<span class='tooltip-area'><p>FunOrder.meetf :
-forall {aT : Type} {d : Order.disp_t} {T : latticeType d},
+forall {aT : Type} {d : disp_t} {T : latticeType d},
 (aT -> T) -> (aT -> T) -> aT -> T
 
 FunOrder.meetf is not universe polymorphic
@@ -1741,7 +1741,7 @@ Expands to: Constant mathcomp.classical.boolp.FunOrder.meetf
 Declared in library mathcomp.classical.boolp, line 951, characters 11-16
 </p><hr/><a href='https://github.com/math-comp/analysis/tree/00a80bdd280330eb64f7eaf6a4ead748c323b46a/classical/boolp.v#L951' target='_blank'>Source code</a></span></div></span><span class="id"> </span><span id="f:623" class="id"><div name="f:623" class=" tooltip">f<span class='tooltip-area'><hr/><a href='https://github.com/math-comp/analysis/tree/00a80bdd280330eb64f7eaf6a4ead748c323b46a/classical/boolp.v#L951' target='_blank'>Source code</a></span></div></span><span class="id"> </span><span id="g:624" class="id"><div name="g:624" class=" tooltip">g<span class='tooltip-area'><hr/><a href='https://github.com/math-comp/analysis/tree/00a80bdd280330eb64f7eaf6a4ead748c323b46a/classical/boolp.v#L951' target='_blank'>Source code</a></span></div></span><span class="id"> :=</span><span class="gallina-kwd"> fun</span><span class="id"> </span><span id="x:625" class="id"><div name="x:625" class=" tooltip">x<span class='tooltip-area'><hr/><a href='https://github.com/math-comp/analysis/tree/00a80bdd280330eb64f7eaf6a4ead748c323b46a/classical/boolp.v#L951' target='_blank'>Source code</a></span></div></span><span class="id"> =&gt;</span><span class="id"> </span><span class="id"><a href="https://math-comp.github.io/htmldoc_2_6_0/mathcomp.order.order.html#Order.meet">Order</a></span>.<span class="id"><a href="https://math-comp.github.io/htmldoc_2_6_0/mathcomp.order.order.html#Order.meet">meet</a></span> (<span class="id"><a href="mathcomp.classical.boolp.html#f:623">f</a></span><span class="id"> </span><span class="id"><a href="mathcomp.classical.boolp.html#x:625">x</a></span>) (<span class="id"><a href="mathcomp.classical.boolp.html#g:624">g</a></span><span class="id"> </span><span class="id"><a href="mathcomp.classical.boolp.html#x:625">x</a></span>).<br/>
 <span class="vernacular">Definition</span><span class="id"> </span><span id="FunOrder.joinf" class="id"><div name="FunOrder.joinf" class=" tooltip">joinf<span class='tooltip-area'><p>FunOrder.joinf :
-forall {aT : Type} {d : Order.disp_t} {T : latticeType d},
+forall {aT : Type} {d : disp_t} {T : latticeType d},
 (aT -> T) -> (aT -> T) -> aT -> T
 
 FunOrder.joinf is not universe polymorphic
